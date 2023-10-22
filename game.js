@@ -65,7 +65,14 @@ $(".btn").click(async function() {
 $(document).keypress(function() {
     if (level == 1) {
         startGame()
-    }})
+    }
+})
+
+$("h1").on("click", function() {
+    if (level == 1) {
+        startGame()
+    }
+})
 
 function startGame() {
     $("body").removeClass("game-over")

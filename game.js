@@ -37,7 +37,7 @@ function checkAnswer() {
     if (gamePattern[currentIdx] !== userClickedPattern[currentIdx]) {
         gameOver()
         var audio = new Audio("./sounds/faustao-errou.mp3")
-        $("h1")[0].innerHTML = "MAS JÁ ERROOU!!!? KKKK BEM FEITO <br /> <br /> Esperava mais de você heim mulé"
+        $("h1")[0].innerHTML = "ERROOU!! <br /> <br /> Clique aqui para jogar novamente"
         audio.play()
         return 0
     }
